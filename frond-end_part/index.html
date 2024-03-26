@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>Movies recommendation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar frame">
+          <div class="title">
+            <h1>Welcome to world of Movies and TV shows</h1>
+          </div>
+
+          <div class="navbar-list">
+            <a href="#">Movies list</a>
+            <a href="#">TV shows list</a>
+            <a href="#">Your recommendation</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="inputs-container frame">
+          <div class="animal-selector selectors">
+            <label for="recommendation-type">Recommendation Type: </label>
+            <select id="recommendation-type" name="recommendation-type">
+              <option value="movie-type">Movies</option>
+              <option value="tv-show-type">TV Shows</option>
+            </select>
+          </div>
+
+          <div class="title-input inputs">
+            <label for="rec-title">Title:</label>
+            <input
+              id="rec-title"
+              type="text"
+              placeholder="Title name..."
+              autocomplete="on"
+              required
+            />
+          </div>
+
+          <div class="rating-input inputs">
+            <label for="rec-rating">Rating:</label>
+            <input
+              id="rec-rating"
+              type="number"
+              placeholder="Imdb rating..."
+              required
+            />
+          </div>
+
+          <div class="description-input inputs">
+            <label for="rec-description">Description:</label>
+            <input
+              id="rec-description"
+              type="text"
+              placeholder="Description..."
+              required
+            />
+          </div>
+
+          <div class="more-info-input inputs">
+            <label for="rec-more-info">More Info:</label>
+            <input
+              id="rec-more-info"
+              type="text"
+              placeholder="Imdb url..."
+              required
+            />
+          </div>
+
+          <div class="submit-btn">
+            <button id="submit-btn">Submit</button>
+          </div>
+
+          <div class="check-btn">
+            <button id="check-btn">Check recommendations</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
